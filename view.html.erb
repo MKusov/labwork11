@@ -1,0 +1,15 @@
+<div class="block">
+  <div class="text_result">Нашлось <b><%=@arr.length%></b> простых чисел Мерсена</div>
+  <table>
+    <tr>
+      <td>№</td>
+      <td>Число</td>
+    </tr>
+    <% @arr.each_with_index do |num,ind| %>
+        <tr>
+          <td><%=ind+1%></td>
+          <td><%=num%></td>
+        </tr>
+    <% end %>
+  </table>
+</div>
